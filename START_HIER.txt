@@ -1,0 +1,43 @@
+ASTRA COMMAND CENTER – HERMES PLUGIN v1.0
+========================================
+
+DAS IST EIN HERMES-DASHBOARD-PLUGIN – keine Windows-EXE.
+
+SCHRITT 1 – GITHUB-REPOSITORY VORBEREITEN
+1. ZIP herunterladen und entpacken.
+2. https://github.com/new öffnen und neues Repository
+   "astra-command-center" anlegen.
+3. Öffentlich ist für die einfache Hermes-Installation am leichtesten.
+   Das Paket enthält keine Passwörter oder Schlüssel.
+4. Die Dateien AUS DIESEM ZIP (plugin.yaml, dashboard-Ordner,
+   README.md und START_HIER.txt) über "Add file > Upload files"
+   ins WURZELVERZEICHNIS des neuen Repositories hochladen.
+5. Änderungen mit "Commit changes" speichern.
+
+SCHRITT 2 – HERMES
+1. Öffne https://hermes-agent.0dgi2no.cserverhost.cloud/plugins
+2. Im Bereich "INSTALL FROM GITHUB / GIT URL" gibst du ein:
+   https://github.com/DEIN-GITHUB-NAME/astra-command-center
+3. Schalte "Enable after install" EIN.
+4. Klicke "INSTALL".
+5. Aktualisiere das Dashboard. Falls nötig Rescan auslösen.
+6. Wenn Chat-Backend 404 meldet, muss das Dashboard auf dem
+   Server neu gestartet werden – seine Python-Routen werden
+   beim Start eingelesen.
+
+SCHRITT 3 – TEST
+1. Links auf "ASTRA Command Center" klicken.
+2. Auf "STATUS" klicken. Es sollte "HERMES LIVE" erscheinen,
+   sofern der Server die Hermes-CLI bereitstellt.
+3. Stelle sicher, dass das Profil "astra" in Hermes angelegt ist.
+4. Schreibe "Hallo Astra" und sende die Nachricht.
+5. Mikrofon in Edge erlauben; deutsche Spracherkennung testen.
+
+EINSCHRÄNKUNGEN
+- Die Website-Adresse ist keine API und muss hier nicht eingegeben werden.
+- Der Plugin-Chat nutzt lokale Hermes-Einzelaufrufe; bei blockiertem
+  CLI-Zugriff nicht nutzbar, dann "HERMES ORIGINAL-CHAT" verwenden.
+- "Hey Astra" ist nur bei geöffneter Browserseite experimentell möglich.
+- Keine echten Installationsarbeiten auf IONOS wurden ausgeführt.
+
+Vollständige technische Hinweise in README.md.

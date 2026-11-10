@@ -1,0 +1,14 @@
+{
+  "name": "astra-command-center",
+  "label": "ASTRA Command Center",
+  "description": "JARVIS-inspirierte Sprach- und Chatoberfläche für Astra, Tu Long, Dozent KI und Ailunor.",
+  "icon": "Sparkles",
+  "version": "1.0.0",
+  "tab": {
+    "path": "/astra-command-center",
+    "position": "after:chat"
+  },
+  "entry": "dist/index.js",
+  "css": "dist/style.css",
+  "api": "plugin_api.py"
+}

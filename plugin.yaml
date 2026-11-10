@@ -1,0 +1,5 @@
+name: astra-command-center
+label: ASTRA Command Center
+description: Sprachgesteuertes JARVIS-Dashboard für Hermes-Profile.
+version: 1.0.0
+manifest_version: 1
